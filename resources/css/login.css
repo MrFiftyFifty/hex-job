@@ -1,0 +1,66 @@
+.login-container {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    min-height: 100vh;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+.form-control {
+    border: 2px solid #eee;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6B73FF;
+    box-shadow: 0 0 0 0.2rem rgba(107, 115, 255, 0.25);
+}
+
+.btn-login {
+    background: linear-gradient(45deg, #6B73FF, #000DFF);
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(107, 115, 255, 0.4);
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #dee2e6, transparent);
+    margin: 1.5rem 0;
+}
+
+.login-title {
+    color: #2d3748;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.form-check-input:checked {
+    background-color: #6B73FF;
+    border-color: #6B73FF;
+}
+
+.auth-links a {
+    color: #6B73FF;
+    transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+    color: #000DFF;
+    text-decoration: none;
+}

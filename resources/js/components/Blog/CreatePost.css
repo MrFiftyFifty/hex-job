@@ -1,0 +1,164 @@
+.editor-wrapper {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background: white;
+    transition: box-shadow 0.3s ease;
+}
+
+.editor-wrapper:focus-within {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.editor-toolbar {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+    background: #f8fafc;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.editor-toolbar button {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.editor-toolbar button:hover {
+    background: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+.editor-toolbar button.is-active {
+    background: #3b82f6;
+    color: white;
+}
+
+.editor-toolbar .btn-group {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 2px;
+}
+
+.editor-content {
+    padding: 1.5rem;
+    min-height: 400px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.ProseMirror {
+    outline: none;
+}
+
+.ProseMirror h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ProseMirror h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.ProseMirror h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.ProseMirror p {
+    margin-bottom: 1.25rem;
+}
+
+.ProseMirror blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #4b5563;
+}
+
+.ProseMirror pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+
+.ProseMirror table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.ProseMirror th,
+.ProseMirror td {
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem;
+}
+
+.ProseMirror th {
+    background: #f8fafc;
+}
+
+.ProseMirror img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.ProseMirror a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ProseMirror a:hover {
+    color: #2563eb;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.ProseMirror li {
+    margin-bottom: 0.5rem;
+}
+
+.ProseMirror mark {
+    background: #fef08a;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.current-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.current-image:hover {
+    transform: scale(1.02);
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: #adb5bd;
+    pointer-events: none;
+    height: 0;
+}

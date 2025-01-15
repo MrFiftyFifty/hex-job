@@ -23,17 +23,17 @@ A feature-rich blog platform built with Laravel, featuring user authentication, 
 ## Installation
 
 1. Clone the repository:
-```bash
+bash
 git clone https://github.com/MrFiftyFifty/hex-job
 
 Install dependencies:
-composer install
-npm install
+- composer install
+- npm install
 
 
 Configure environment:
-cp .env.example .env
-php artisan key:generate
+- cp .env.example .env
+- php artisan key:generate
 
 
 Configure database in .env:
@@ -46,16 +46,17 @@ DB_PASSWORD=your_password
 
 
 Run migrations and seeders:
-php artisan migrate --seed
+- php artisan migrate --seed
 
 
 Build assets:
-npm run build
+- npm run build
 
 
 Create storage link:
-php artisan storage:link
+- php artisan storage:link
 
 
-Watch assets:
-npm run dev
+Watch assets and run SAIL:
+- npm run dev
+- ./vendor/bin/sail up -d

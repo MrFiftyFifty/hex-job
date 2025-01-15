@@ -60,3 +60,13 @@ Create storage link:
 Watch assets and run SAIL:
 - npm run dev
 - ./vendor/bin/sail up -d
+
+
+# Admin Panel
+
+
+Login with:
+admin@example.com
+password
+
+All Admin links are in web.php
